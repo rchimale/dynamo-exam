@@ -1,2 +1,2 @@
 # dynamo-exam
-Dynamo Exam Excecises
+Dynamo Exam Exercises
