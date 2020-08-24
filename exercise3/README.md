@@ -35,12 +35,12 @@ network:
 Add to the kernel config file /etc/sysctl.conf
 net.ipv4.ip_forward=1
 
-<ins> Enable NAT forwarding using iptables: <ins>
+<ins> Enable NAT forwarding using iptables: </ins>
 sudo iptables -t nat -A POSTROUTING -o ens160 -j MASQUERADE
 
-<ins> Save iptables config: <ins>
+<ins> Save iptables config: </ins>
 sudo iptables-save > /etc/iptables/rules.v4
 
-<ins> Ensure the rules load at boot: <ins>
+<ins> Ensure the rules load at boot: </ins>
 Add the following line to /etc/rc.local
 /sbin/iptables-restore < /etc/iptables/rules.v4
